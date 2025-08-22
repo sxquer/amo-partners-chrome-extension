@@ -1,0 +1,18 @@
+.set-company-name-btn {
+  background-color: #4c8bf7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.set-company-name-btn:hover {
+  background-color: #4d85e5;
+}
+
+/* Адаптируем сетку для нового столбца */
+.List_row__GiS_z {
+  grid-template-columns: repeat(7, minmax(0, 1fr)); /* было 6, стало 7 */
+}

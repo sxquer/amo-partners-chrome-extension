@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "amoCRM Partners Shop Helper",
+  "version": "1.0",
+  "description": "Добавляет название компании в партнерский магазин amoCRM и предоставляет быстрый поиск.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.amocrm.ru/partners/cabinet/shop*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}
